@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>CURSIVA</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+  <script src="https://kit.fontawesome.com/b7aa95e782.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--HEADER-->
+  <header class="header">
+    <a class="logo" href="index.html">
+      <img class="logo__imagen" src="img/logo.png" alt="imagen logo">
+    </a>
+
+    <form class="barra-buscador" action="" method="post" style="">
+      <datalist id="lista__cursos">
+        <option value="Desarrollo web">
+        <option value="Phyton">
+        <option value="Java">
+        <option value="C#">
+        <option value="javaScript">
+        <option value="Android">
+      </datalist>
+
+      <button class="icon-lupa" type="button" name="button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd369" ; fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="10" cy="10" r="7" />
+          <line x1="21" y1="21" x2="15" y2="15" />
+        </svg>
+      </button>
+
+      <input class="campo-busqueda" size="60" type="search" name="" value="" placeholder="Buscar curso" list="lista__cursos">
+    </form>
+
+    <div class="icon-carrito">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd369" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <circle cx="6" cy="19" r="2" />
+        <circle cx="17" cy="19" r="2" />
+        <path d="M17 17h-11v-14h-2" />
+        <path d="M6 5l14 1l-1 7h-13" />
+      </svg>
+    </div>
+
+    <button class="boton__inicio" type="button" name="button">iniciar sesión</button>
+    <button class="boton__registro" type="button" name="button">regístrate</button>
+
+  </header>
+  <!--FIN DE HEADER-->
+
+  <!--MENU DE NAVEGACIÓN-->
+  <nav class="navegacion-superior">
+    <a class="navegacion__item" href="index.html">inicio</a>
+    <a class="navegacion__item" href="formulario.html">cursos</a>
+    <a class="navegacion__item" href="giftcard.html">giftcard</a>
+  </nav>
+
+  <main class="contenedor">
+    <!--MAIN-->
+    <h2>Universidad Java 2021-De Cero a Experto</h2>
+    <h3>inscripción</h3>
+
+
+    <form class="formulario-inscripcion" method="post">
+        <!--DATOS PERSONA-->
+        <div class="formulario-campos">
+          <div class="campo">
+            <label for="">Nombre</label>
+            <input class="input-text" type="text" required />
+          </div>
+
+          <div class="campo">
+            <label for="">Apellido</label>
+            <input class="input-text" type="text" required />
+          </div>
+
+          <div class="campo">
+            <label for="">E-mail  &nbsp&nbsp</label>
+            <input class="input-email" type="email">
+          </div>
+
+          <button class="boton-resta" type="button" name="button"><i class="fas fa-minus-circle fa-2x"></i></button>
+        </div>
+
+
+        <div class="formulario-campos">
+          <div class="campo">
+            <label for="">Nombre</label>
+            <input class="input-text" type="text" required />
+          </div>
+
+          <div class="campo">
+            <label for="">Apellido</label>
+            <input class="input-text" type="text" required />
+          </div>
+
+          <div class="campo">
+            <label for="">E-mail &nbsp&nbsp</label>
+            <input class="input-email" type="email">
+          </div>
+
+          <button class="boton-resta" type="button" name="button"><i class="fas fa-minus-circle fa-2x"></i></button>
+        </div>
+
+        <div class="formulario-campos">
+          <div class="campo">
+            <label for="">Nombre</label>
+            <input class="input-text" type="text" required />
+          </div>
+
+          <div class="campo">
+            <label for="">Apellido</label>
+            <input class="input-text" type="text" required />
+          </div>
+
+          <div class="campo">
+            <label for="">E-mail &nbsp&nbsp</label>
+            <input class="input-email" type="email">
+          </div>
+
+          <button class="boton-resta" type="button" name="button"><i class="fas fa-minus-circle fa-2x"></i></button>
+        </div>
+
+      <button class="boton-sumar" type="button" name="button"> <i class="fas fa-plus-circle fa-2x"></i>
+        <p>&nbsp Agregar persona</p>
+      </button>
+
+      <div class="inscripcion">
+      <p class="precio">US$000.-</p>
+      <button class="boton_inscripcion"type="button" name="button">inscribirse</button>
+      </div>
+
+    </form>
+  </main>
+
+  <footer class="footer">
+      <ol class="grupo">
+        <li> Datos del grupo:</li>
+        <li> Santiago Saltor, 38.675.463</li>
+        <li> Ivan Maldonado, 43.051.147</li>
+        <li> Brenda Erika Fiorella Herrera, 43.724.139 </li>
+      </ol>
+
+      <nav class="navegacion-inferior">
+        <a class="navegacion__item" href="index.html">inicio</a>
+        <a class="navegacion__item" href="cursos.html">cursos</a>
+        <a class="navegacion__item" href="giftcard.html">giftcard</a>
+      </nav>
+
+      <div class="redes-sociales">
+        <a class="facebook" href="#">
+          <img src="img/facebook.png" alt="">
+        </a>
+
+        <a class="instagram" href="#">
+          <img src="img/instagram.png" alt="">
+        </a>
+
+        <a class="instagram" href="#">
+          <img src="img/twitter.png" alt="twitter">
+        </a>
+      </div>
+  </footer>
+
+</body>
+
+</html>

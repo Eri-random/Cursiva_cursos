@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>CURSIVA</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+  <script src="https://kit.fontawesome.com/b7aa95e782.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--HEADER-->
+  <header class="header">
+    <a class="logo" href="index.html">
+      <img class="logo__imagen" src="img/logo.png" alt="imagen logo">
+    </a>
+
+    <form class="barra-buscador" action="" method="post" style="">
+      <datalist id="lista__cursos">
+        <option value="Desarrollo web">
+        <option value="Phyton">
+        <option value="Java">
+        <option value="C#">
+        <option value="javaScript">
+        <option value="Android">
+      </datalist>
+
+      <button class="icon-lupa" type="button" name="button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd369" ; fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="10" cy="10" r="7" />
+          <line x1="21" y1="21" x2="15" y2="15" />
+        </svg>
+      </button>
+
+      <input class="campo-busqueda" size="60" type="search" name="" value="" placeholder="Buscar curso" list="lista__cursos">
+    </form>
+
+    <div class="icon-carrito">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd369" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <circle cx="6" cy="19" r="2" />
+        <circle cx="17" cy="19" r="2" />
+        <path d="M17 17h-11v-14h-2" />
+        <path d="M6 5l14 1l-1 7h-13" />
+      </svg>
+    </div>
+
+    <button class="boton__inicio" type="button" name="button">iniciar sesión</button>
+    <button class="boton__registro" type="button" name="button">regístrate</button>
+
+  </header>
+  <!--FIN DE HEADER-->
+
+  <!--MENU DE NAVEGACIÓN-->
+  <nav class="navegacion-superior">
+    <a class="navegacion__item" href="index.html">inicio</a>
+    <a class="navegacion__item" href="formulario.html">cursos</a>
+    <a class="navegacion__item" href="giftcard.html">giftcard</a>
+  </nav>
+
+  <!--CARROUSEL-->
+  <section class="slider">
+    <div class="slider__div">
+      <i class="fas fa-chevron-left fa-3x"></i>
+      <img class="slider__imagen" src="img/slider.jpg" alt="">
+      <i class="fas fa-chevron-right fa-3x"></i>
+    </div>
+  </section>
+
+  <!--MAIN-->
+  <main class="contenedor">
+    <h1>Pasos de inscripción</h1>
+    <section class="pasos-inscripcion">
+      <div class="pasos-inscripcion__item">
+        <pre><span>1</span> Elige un curso</pre>
+      </div>
+
+      <div class="pasos-inscripcion__item">
+        <pre><span>2</span> Completá el formulario
+           de inscripción</pre>
+      </div>
+
+      <div class="pasos-inscripcion__item">
+        <pre><span>3</span> Obtené tu curso y comenzá
+           a aprender de inmediato</pre>
+      </div>
+  </section>
+
+    <h1>Cursos destacados</h1>
+    <div class="grid">
+      <!--CURSO CONTENEDOR-->
+      <div class="curso">
+        <!--CURSO IMAGEN-->
+          <a class="curso__imagen" href="curso.html">
+            <img class src="img/c.png" alt="imagen c#">
+            <p class="curso__precio">12,99 US$</p>
+          </a>
+        <!--CURSO INFORMACION-->
+        <div class="curso__informacion">
+          <p class="curso__nombre">Aprende programación orientada a objetos en C# con proyectos</p>
+          <p>Duración: 22hs</p>
+          <a class="curso__detalles" href="curso.html">ver detalles</a>
+          <!--BOTON PARA COMPRAR-->
+          <a class="boton__compra" href="#">Comprar</a>
+        </div>
+      </div>
+      <!--CIERRE DE CURSO-->
+
+      <!--CURSO CONTENEDOR-->
+      <div class="curso sombra">
+        <!--CURSO IMAGEN-->
+        <a class="curso__imagen" href="curso.html">
+          <img class src="img/java.jpg" alt="imagen c#">
+          <p class="curso__precio">12,99 US$</p>
+        </a>
+        <!--CURSO INFORMACION-->
+        <div class="curso__informacion">
+          <p class="curso__nombre">Universidad Java 2021-De Cero a Experto!</p>
+          <p>Duración:+100 hs</p>
+          <a class="curso__detalles" href="curso.html">ver detalles</a>
+          <!--BOTON PARA COMPRAR-->
+          <a class="boton__compra" href="#">Comprar</a>
+        </div>
+      </div>
+      <!--CIERRE DE CURSO-->
+
+      <!--CURSO CONTENEDOR-->
+      <div class="curso sombra">
+        <!--CURSO IMAGEN-->
+        <a class="curso__imagen" href="curso.html">
+          <img class src="img/javaScript.jpg" alt="imagen c#">
+          <p class="curso__precio">12,99 US$</p>
+        </a>
+        <!--CURSO INFORMACION-->
+        <div class="curso__informacion">
+          <p class="curso__nombre">Desarrollo web. JavaScript desde cero!</p>
+          <p>Duración: 18hrs</p>
+          <a class="curso__detalles" href="curso.html">ver detalles</a>
+          <!--BOTON PARA COMPRAR-->
+          <a class="boton__compra" href="#">Comprar</a>
+        </div>
+      </div>
+      <!--CIERRE DE CURSO-->
+
+      <!--CURSO CONTENEDOR-->
+      <div class="curso sombra">
+        <!--CURSO IMAGEN-->
+        <a class="curso__imagen" href="curso.html">
+          <img class src="img/Kotlin.png" alt="imagen Kotlin">
+          <p class="curso__precio">12,99 US$</p>
+        </a>
+        <!--CURSO INFORMACION-->
+        <div class="curso__informacion">
+          <p class="curso__nombre">Android Completo con Kotlin: Aprende creando apps</p>
+          <p>Duración: 18hrs</p>
+          <a class="curso__detalles" href="curso.html">ver detalles</a>
+          <!--BOTON PARA COMPRAR-->
+          <a class="boton__compra" href="#">Comprar</a>
+        </div>
+      </div>
+      <!--CIERRE DE CURSO-->
+
+      <!--CURSO CONTENEDOR-->
+      <div class="curso sombra">
+        <!--CURSO IMAGEN-->
+        <a class="curso__imagen" href="curso.html">
+          <img class src="img/phyton.png" alt="imagen Kotlin">
+          <p class="curso__precio">12,99 US$</p>
+        </a>
+        <!--CURSO INFORMACION-->
+        <div class="curso__informacion">
+          <p class="curso__nombre">Curso Maestro de Python 3: Aprende Desde Cero</p>
+          <p>Duración: 13hrs</p>
+          <a class="curso__detalles" href="curso.html">ver detalles</a>
+          <!--BOTON PARA COMPRAR-->
+          <a class="boton__compra" href="#">Comprar</a>
+        </div>
+      </div>
+      <!--CIERRE DE CURSO-->
+
+      <!--CURSO CONTENEDOR-->
+      <div class="curso sombra">
+        <!--CURSO IMAGEN-->
+        <a class="curso__imagen" href="curso.html">
+          <img class src="img/web.jpg" alt="imagen Kotlin">
+          <p class="curso__precio">12,99 US$</p>
+        </a>
+        <!--CURSO INFORMACION-->
+        <div class="curso__informacion">
+          <p class="curso__nombre">Desarrollo Web Completo con HTML5, CSS3,PHP y MySQL</p>
+          <p>Duración: 90hrs</p>
+          <a class="curso__detalles" href="curso.html">ver detalles</a>
+          <!--BOTON PARA COMPRAR-->
+          <a class="boton__compra" href="#">Comprar</a>
+        </div>
+      </div>
+      <!--CIERRE DE CURSOS-->
+    </div>
+    <!--CIERRE DE GRID-->
+
+    <section class="medios_de_pago">
+      <h1>medios de pago</h1>
+
+      <div class="medios_de_pago__informacion">
+        <button class="flecha" type="button" name="button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#393e46" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <polyline points="15 6 9 12 15 18" />
+          </svg>
+        </button>
+
+        <div class="medios_de_pago__imagen">
+          <img src="img/pagos/mercadopago.png" alt="">
+        </div>
+
+        <div class="medios_de_pago__imagen">
+          <img src="img/pagos/pagofacil.png" alt="">
+        </div>
+
+        <div class="medios_de_pago__imagen">
+          <img src="img/pagos/visa.png" alt="">
+        </div>
+
+        <div class="medios_de_pago__imagen">
+          <img src="img/pagos/mastercard.png" alt="">
+        </div>
+
+
+
+
+        <button class="flecha" type="button" name="button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#393e46" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <polyline points="9 6 15 12 9 18" />
+          </svg>
+        </button>
+      </div>
+
+    </section>
+  </main>
+
+
+  <footer class="footer">
+      <ol class="grupo">
+      <li> Datos del grupo:</li>
+      <li> Santiago Saltor, 38.675.463</li>
+      <li> Ivan Maldonado, 43.051.147</li>
+      <li> Brenda Erika Fiorella Herrera, 43.724.139 </li>
+    </ol>
+
+    <nav class="navegacion-inferior">
+      <a class="navegacion__item" href="index.html">inicio</a>
+      <a class="navegacion__item" href="cursos.html">cursos</a>
+      <a class="navegacion__item" href="giftcard.html">giftcard</a>
+    </nav>
+
+    <div class="redes-sociales">
+      <a class="facebook" href="#">
+        <img src="img/facebook.png" alt="facebook">
+      </a>
+
+      <a class="instagram" href="#">
+        <img src="img/instagram.png" alt="instagram">
+      </a>
+
+      <a class="instagram" href="#">
+        <img src="img/twitter.png" alt="twitter">
+      </a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

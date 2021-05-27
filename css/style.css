@@ -1,0 +1,422 @@
+﻿:root {
+  /*Paleta de colores*/
+  --Oscuro:#222831;
+  --Gris: #393e46;
+  --Amarillo: #ffd369;
+  --Gris-Claro: #eeeeee;
+
+    /*tipos de fuente*/
+  --fuentePrincipal: 'Open Sans', sans-serif;
+  --fuenteCursos: 'Krub', sans-serif;
+}
+
+/*GLOBALES*/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /*1rem=10px*/
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--fuentePrincipal);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+h1, h2,h3 {
+  line-height: 2rem;
+  text-transform: uppercase;
+
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 6rem;
+  color: var(--Gris);
+}
+
+h2 {
+ font-size: 2rem;
+ margin-top: 6rem;
+
+}
+
+h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+li{
+  list-style: none;
+}
+
+pre{
+  margin: 0;
+  font-family: var(--fuentePrincipal);
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.centrar{
+  text-align: center;
+}
+
+.contenedor{
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 740px) {
+   .contenedor{
+     max-width: 70rem;
+   }
+}
+
+@media (min-width: 900px) {
+  .contenedor{
+    max-width: 100rem;
+  }
+}
+/*CIERRE GLOBALES*/
+
+/*HEADER*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap:1rem;
+  background-color: var(--Oscuro);
+  padding: 1rem;
+  border-bottom: 1px groove white;
+}
+
+@media (min-width: 1125px) {
+   .header{
+     justify-content: space-evenly;
+   }
+}
+
+.logo{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+@media (min-width: 1125px) {
+  .logo{
+    margin:0;
+  }
+}
+
+.barra-buscador{
+  position: relative;
+}
+
+.icon-lupa {
+  border: 0;
+  background: transparent;
+}
+@media (min-width: 1125px) {
+  .icon-lupa {
+    position: absolute;
+    bottom: 0
+  }
+}
+
+.campo-busqueda,
+.boton__inicio,
+.boton__registro {
+  display: none;
+}
+
+@media (min-width: 1125px) {
+   .boton__inicio{
+     display: inline-flex;
+     color: var(--Amarillo);
+     background-color: white;
+     padding: 1rem;
+     border: 1px solid var(--Amarillo);
+     border-radius: 2rem;
+   }
+}
+
+@media (min-width: 1125px) {
+   .boton__registro{
+     display: inline-flex;
+     color: white;
+     background-color: var(--Amarillo);
+     padding: 1rem;
+     border: 1px solid white;
+     border-radius: 2rem;
+   }
+}
+
+@media (min-width:1125px) {
+  .campo-busqueda {
+    display: inline-flex;
+    text-indent: 5rem;
+    outline: none;
+    height: 4rem;
+    border: 1px solid var(--cuarto);
+    border-radius: 3rem;
+  }
+}
+/*CIERRE HEADER*/
+
+/*MENÚ DE NAVEGACION*/
+  .navegacion-superior{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--Oscuro);
+  }
+
+  @media (min-width: 900px) {
+    .navegacion-superior{
+      flex-direction: row;
+      justify-content:center;
+      gap:15rem;
+    }
+  }
+
+
+.navegacion-inferior{
+  display: flex;
+  flex-direction: column;
+}
+
+.navegacion__item{
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.navegacion__item:hover {
+  color: var(--Amarillo);
+}
+
+/**CARROUSEL**/
+.slider__div{
+  display: flex;
+  align-items: center;
+}
+.fa-chevron-right{
+  position: absolute;
+  right: 0;
+}
+
+.fa-chevron-left{
+  position: absolute;
+  left: 0;
+}
+
+.fa-chevron-right:hover, .fa-chevron-left:hover{
+  background-color: var(--Gris-Claro);
+}
+/*INSCRIPCION**/
+
+.pasos-inscripcion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .pasos-inscripcion{
+    flex-direction: row;
+    gap:4rem;
+  }
+}
+
+.pasos-inscripcion__item{
+  padding: 1.5rem;
+  width: 30rem;
+  height: 8rem;
+}
+
+@media (min-width: 900px) {
+  .pasos-inscripcion__item {
+    background-color: var(--Gris-Claro);
+    box-shadow: 5px 5px 2px 0px var(--Gris);
+    /*desplazamieto horizontal, vertical, desenfoque, propagacion, color, interna o externa*/
+  }
+}
+
+.pasos-inscripcion__item span {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  background-color: var(--Amarillo);
+  padding: 1rem 1.5rem;
+  border-radius: 100%;
+}
+
+/**CURSOS DISTRIBUCION**/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1);
+  gap: 2rem;
+}
+
+@media (min-width: 740px) {
+   .grid{
+     grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+/**CURSOS CONTENIDO**/
+
+.curso{
+  border: 1px solid var(--Gris);
+  padding:1.5rem;
+  border-radius: 1rem;
+}
+
+.curso__imagen {
+  position: relative;
+}
+
+.curso__precio {
+  position: absolute;
+  bottom: 2rem;
+  right: 0;
+  background-color: black;
+  color: var(--Gris-Claro);
+  width: 10rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.curso__informacion {
+  display: inline;
+  position: relative;
+}
+
+.curso__nombre {
+  line-height: 2rem;
+  font-family: var(--fuenteCursos);
+  font-weight:bold;
+}
+
+.curso__detalles {
+  text-decoration: underline;
+}
+
+.boton__compra {
+  position: absolute;
+  right: 0;
+  font-family: var(--fuenteTitulo);
+  color: white;
+  background-color: var(--Gris);
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 1rem;
+}
+
+/*MEDIOS DE PAGO*/
+.medios_de_pago__informacion{
+display: flex;
+align-items: center;
+justify-content: center;
+gap:2rem;
+
+}
+
+.medios_de_pago__imagen{
+width:8rem; height:8rem;
+}
+
+
+.flecha{
+  border: none;
+  background: transparent;
+}
+
+/*FOOTER*/
+
+
+.footer{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  color: white;
+  background-color: var(--Oscuro);
+  margin-top: 3rem;
+}
+
+/*FORMULARIO*/
+.formulario-campos{
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  gap:2rem;
+  border-bottom: 1px solid var(--Gris);
+}
+
+@media (min-width: 740px) {
+  .formulario-campos{
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+    column-gap: 3rem;
+    border: none;
+  }
+}
+
+.boton-resta{
+  border: none;
+  background-color: transparent;
+  width: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.boton-sumar{
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  border: none;
+  background-color: transparent;
+}
+
+.precio{
+  background-color: black;
+  color: var(--Gris-Claro);
+  width: 10rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.inscripcion{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap:2rem;
+}
