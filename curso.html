@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>CURSIVA</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <!--HEADER-->
+  <header class="header">
+    <a class="logo" href="index.html">
+      <img class="logo__imagen" src="img/logo.png" alt="imagen logo">
+    </a>
+
+    <form class="barra-buscador" action="" method="post" style="">
+      <datalist id="lista__cursos">
+        <option value="Desarrollo web">
+        <option value="Phyton">
+        <option value="Java">
+        <option value="C#">
+        <option value="javaScript">
+        <option value="Android">
+      </datalist>
+
+      <button class="icon-lupa" type="button" name="button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd369" ; fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="10" cy="10" r="7" />
+          <line x1="21" y1="21" x2="15" y2="15" />
+        </svg>
+      </button>
+
+      <input class="campo-busqueda" size="60" type="search" name="" value="" placeholder="Buscar curso" list="lista__cursos">
+    </form>
+
+    <div class="icon-carrito">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd369" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <circle cx="6" cy="19" r="2" />
+        <circle cx="17" cy="19" r="2" />
+        <path d="M17 17h-11v-14h-2" />
+        <path d="M6 5l14 1l-1 7h-13" />
+      </svg>
+
+      <p id="cant_carrito" class="contador__carrito"></p>
+    </div>
+
+    <button class="boton__inicio" type="button" name="button">iniciar sesión</button>
+    <button class="boton__registro" type="button" name="button">regístrate</button>
+
+  </header>
+  <!--FIN DE HEADER-->
+
+  <!--MENU DE NAVEGACIÓN-->
+  <nav class="navegacion-superior">
+    <a class="navegacion__item" href="index.html">inicio</a>
+    <a class="navegacion__item" href="contacto.html">contacto</a>
+    <a class="navegacion__item" href="giftcard.html">giftcard</a>
+    <a class="navegacion__item" href="calendario.html">calendario</a>
+  </nav>
+
+
+  <main>
+    <div class="grid__columna">
+      <div class="java">
+        <img src="img/cursos/java.jpg">
+      </div>
+
+      <section class="datos__curso">
+        <h2>Universidad Java 2021-De Cero a Experto!</h2>
+        <ul class="lista">
+          <li>
+            <p><span>Valor:</span>12,99 US$</p>
+          </li>
+
+          <li>
+            <p><span>Tiempo de Dedicación Necesario:</span>+100hs</p>
+          </li>
+
+          <li>
+            <p><span>Descripción del curso:</span>¡Somos Best Seller el Único Curso Java! Actualizado 2021. Incluye +100 horas de video, +100,000 estudiantes, +21,000 reseñas de alumnos muy satisfechos. "La Universidad Java es el mejor curso para
+              aprender a programar
+              en Java y en Español".</p>
+          </li>
+
+          <li>
+            <p><span>Requisitos Previos:</span>
+              <br>
+              .El curso inicia desde cero, y llega hasta niveles intermedios y avanzados del lenguaje Java. Todo en un mismo curso.
+              <br>
+              .No se requiere ningún conocimiento previo, solo manejo básico de PC
+            </p>
+          </li>
+        </ul>
+
+        <a class="boton" href="formulario.html">INSCRIBIRSE</a>
+
+        <h3>Contenidos por clase</h3>
+        <div id="menu">
+          <ul>
+            <li class="item"><a class="unidad1"><i class="arrow-down fas fa-angle-double-down"></i> Fundamentos Java: Instalación y Apache Netbeans</a>
+              <ul class="desplegable 1">
+                <li><a href="#"><i class="fas fa-play-circle"></i> Ejercicio: Instalación del JDK de Java</a></li>
+                <li><a href="#"><i class="fas fa-play-circle"></i> Ejercicio: Instalación de Apache Netbeans en Windows</a></li>
+                <li><a href="#"><i class="fas fa-play-circle"></i> Ejercicio: Hola Mundo con Apache Netbeans</a></li>
+              </ul>
+            </li>
+
+
+            <li class="item"><a class="unidad2"><i class="arrow-down fas fa-angle-double-down"></i> Fundamentos Java: Variables en Java</a>
+              <ul class="desplegable 2">
+                <li><a href="#"><i class="fas fa-play-circle"></i> Variables en Java</a></li>
+                <li><a href="#"><i class="fas fa-play-circle"></i> Tipos Entero y Tipo String en Java </a></li>
+                <li><a href="#"><i class="fas fa-play-circle"></i> Inferencia en Tipos en Java</a></li>
+              </ul>
+            </li>
+            <li class="item"><a class="unidad3"><i class="arrow-down fas fa-angle-double-down"></i> Fundamentos Java: Tipos Primitivos en Java</a>
+              <ul class="desplegable 3">
+                <li><a href="#"><i class="fas fa-play-circle"></i> Tipos Primitivos en Java</a></li>
+                <li><a href="#"><i class="fas fa-play-circle"></i> Tipos númericos enteros</a></li>
+                <li><a href="#"><i class="fas fa-play-circle"></i> Ejercicio: Tipos Primitivos tipos Flotantes</a></li>
+                <li><a href="#"><i class="fas fa-play-circle"></i> Ejercicio: Tipos Primitivos tipos char</a></li>
+                <li><a href="#"><i class="fas fa-play-circle"></i> Ejercicio: Tipos Primitivos tipos boolean</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <section class="datos__profesor">
+      <h2 class="titulo__docente">DOCENTE</h2>
+      <div class="profesor">
+        <img class="imgprofesor" src="img/profesor.jpg">
+        <div class="textoprofesor">
+          <h3 class="no-margin">nombre y apellido</h3>
+          <img class="estrellas" src="img/estrellas.png">
+          <br />
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+    </section>
+
+
+    <h1>cursos recomendados</h1>
+
+    <section class="cursos__recomendados">
+      <div class="curso">
+        <!--CURSO IMAGEN-->
+          <a class="curso__imagen" href="curso.html">
+            <img class src="img/cursos/c.png" alt="imagen c#">
+            <p class="curso__precio">12,99 US$</p>
+          </a>
+        <!--CURSO INFORMACION-->
+        <div class="curso__informacion">
+          <p class="curso__nombre">Aprende programación orientada a objetos en C# con proyectos</p>
+          <p>Duración: 22hs</p>
+          <a class="curso__detalles" href="curso.html">ver detalles</a>
+          <!--BOTON PARA COMPRAR-->
+          <a class="boton__compra" href="#">Comprar</a>
+        </div>
+      </div>
+      <!--CIERRE DE CURSO-->
+
+      <!--CURSO CONTENEDOR-->
+      <div class="curso sombra">
+        <!--CURSO IMAGEN-->
+        <a class="curso__imagen" href="curso.html">
+          <img class src="img/cursos/java.jpg" alt="imagen c#">
+          <p class="curso__precio">12,99 US$</p>
+        </a>
+        <!--CURSO INFORMACION-->
+        <div class="curso__informacion">
+          <p class="curso__nombre">Universidad Java 2021-De Cero a Experto!</p>
+          <p>Duración:+100 hs</p>
+          <a class="curso__detalles" href="curso.html">ver detalles</a>
+          <!--BOTON PARA COMPRAR-->
+          <a class="boton__compra" href="#">Comprar</a>
+        </div>
+      </div>
+      <!--CIERRE DE CURSO-->
+
+      <!--CURSO CONTENEDOR-->
+      <div class="curso sombra">
+        <!--CURSO IMAGEN-->
+        <a class="curso__imagen" href="curso.html">
+          <img class src="img/cursos/javaScript.jpg" alt="imagen c#">
+          <p class="curso__precio">12,99 US$</p>
+        </a>
+        <!--CURSO INFORMACION-->
+        <div class="curso__informacion">
+          <p class="curso__nombre">Desarrollo web. JavaScript desde cero!</p>
+          <p>Duración: 18hrs</p>
+          <a class="curso__detalles" href="curso.html">ver detalles</a>
+          <!--BOTON PARA COMPRAR-->
+          <a class="boton__compra" href="#">Comprar</a>
+        </div>
+      </div>
+      <!--CIERRE DE CURSO-->
+
+      <!--CURSO CONTENEDOR-->
+      <div class="curso sombra">
+        <!--CURSO IMAGEN-->
+        <a class="curso__imagen" href="curso.html">
+          <img class src="img/cursos/Kotlin.png" alt="imagen Kotlin">
+          <p class="curso__precio">12,99 US$</p>
+        </a>
+        <!--CURSO INFORMACION-->
+        <div class="curso__informacion">
+          <p class="curso__nombre">Android Completo con Kotlin: Aprende creando apps</p>
+          <p>Duración: 18hrs</p>
+          <a class="curso__detalles" href="curso.html">ver detalles</a>
+          <!--BOTON PARA COMPRAR-->
+          <a class="boton__compra" href="#">Comprar</a>
+        </div>
+      </div>
+      <!--CIERRE DE CURSO-->
+
+    </section>
+
+
+  </main>
+
+  <footer class="footer">
+    <a class="logo margin" href="index.html">
+      <img class="logo__imagen" src="img/logo.png" alt="imagen logo">
+    </a>
+
+    <p>Copyright © Cursiva 2021 - Todos los derechos reservados</p>
+
+    <div class="redes-sociales margin">
+      <a class="facebook" href="#">
+        <img src="img/redes/facebook.png" alt="">
+      </a>
+
+      <a class="instagram" href="#">
+        <img src="img/redes/instagram.png" alt="">
+      </a>
+
+      <a class="instagram" href="#">
+        <img src="img/redes/twitter.png" alt="twitter">
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/dc8a484c6e.js" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/carrito.js"> </script>
+  <script src="js/datosDeCurso.js"></script>
+
+</body>
+
+</html>

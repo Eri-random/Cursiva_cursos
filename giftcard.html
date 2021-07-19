@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Giftcard - Cursiva</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+</head>
+
+<header class="header">
+  <a class="logo" href="index.html">
+    <img class="logo__imagen" src="img/logo.png" alt="imagen logo">
+  </a>
+
+  <form class="barra-buscador" action="" method="post" style="">
+    <datalist id="lista__cursos">
+      <option value="Desarrollo web">
+      <option value="Phyton">
+      <option value="Java">
+      <option value="C#">
+      <option value="javaScript">
+      <option value="Android">
+    </datalist>
+
+    <button class="icon-lupa" type="button" name="button">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd369" ; fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <circle cx="10" cy="10" r="7" />
+        <line x1="21" y1="21" x2="15" y2="15" />
+      </svg>
+    </button>
+
+    <input class="campo-busqueda" size="60" type="search" name="" value="" placeholder="Buscar curso" list="lista__cursos">
+  </form>
+
+  <div class="icon-carrito">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd369" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <circle cx="6" cy="19" r="2" />
+      <circle cx="17" cy="19" r="2" />
+      <path d="M17 17h-11v-14h-2" />
+      <path d="M6 5l14 1l-1 7h-13" />
+    </svg>
+
+    <p id="cant_carrito" class="contador__carrito"></p>
+
+  </div>
+
+  <button class="boton__inicio" type="button" name="button">iniciar sesión</button>
+  <button class="boton__registro" type="button" name="button">regístrate</button>
+
+</header>
+<!--FIN DE HEADER-->
+
+<!--MENU DE NAVEGACIÓN-->
+<nav class="navegacion-superior">
+  <a class="navegacion__item" href="index.html">inicio</a>
+  <a class="navegacion__item" href="contacto.html">contacto</a>
+  <a class="navegacion__item" href="giftcard.html">giftcard</a>
+  <a class="navegacion__item" href="calendario.html">calendario</a>
+</nav>
+<!--FIN MENU DE NAVEGACIÓN-->
+<!--MAIN-->
+<body>
+  <!--contenedor amolda la pagina-->
+  <main class="contenedor">
+    <!--div que agrupa el contenido para posicionar-->
+    <div class="giftcard">
+      <!--tarjeta-->
+      <div class="giftcard__estructura">
+        <div class="t-right">
+          <p class="giftcard__precio">$0000.-</p>
+        </div>
+        <div class="giftcard__info">
+          <h2>giftcard para</h2>
+          <h1 class="destinatario">destinatario</h1>
+        </div>
+      </div>
+
+      <!--opciones de tarjeta-->
+      <div class="gifcard__contenido">
+        <h2 class="no-margin">Personalización de Giftcard</h2>
+
+        <div id="nombre_destinatario">
+            <input id="inputNombre" type="text" placeholder="Nombre del destinatario" name="nombre" maxlength="30">
+        </div>
+
+        <div id="Color_tarjeta">
+          <h4 class="no-margin">Color</h4>
+          <table id="elementos">
+            <tr>
+              <td><img src="img/colores/red.png" alt="red" width="25px" /></td>
+              <td><img src="img/colores/blue.png" alt="blue" width="25px" /></td>
+              <td><img src="img/colores/green.png" alt="green" width="25px" /></td>
+              <td><img src="img/colores/yellow.png" alt="yellow" width="25px" /></td>
+              <td><img src="img/colores/pink.png" alt="pink" width="25px" /></td>
+              <!--circulos de colores-->
+            </tr>
+            <tr>
+              <td> <input type="radio" name="color" value="red"   onclick="cambiarColor();"></td>
+              <td> <input type="radio" name="color" value="blue"  onclick="cambiarColor();"></td>
+              <td> <input type="radio" name="color" value="black" onclick="cambiarColor();"></td>
+              <td> <input type="radio" name="color" value="yellow"onclick="cambiarColor();"></td>
+              <td> <input type="radio" name="color" value="pink"  onclick="cambiarColor();"></td>
+            </tr>
+          </table>
+        </div>
+        <div id="Tamanio_fuente">
+          <h4 class="no-margin">Tamaño de fuente</h4>
+          <table id="elementos">
+            <tr>
+              <td>20px</td>
+              <td>28px</td>
+              <td>32px</td>
+              <td>48px</td>
+              <td>60px</td>
+            </tr>
+            <tr>
+              <td> <input type="radio" name="size" value="20"  onclick="cambiarTamaño();"></td>
+              <td> <input type="radio" name="size" value="28"  onclick="cambiarTamaño();"></td>
+              <td> <input type="radio" name="size" value="32"  onclick="cambiarTamaño();"></td>
+              <td> <input type="radio" name="size" value="48"  onclick="cambiarTamaño();"></td>
+              <td> <input type="radio" name="size" value="60"  onclick="cambiarTamaño();"></td>
+            </tr>
+          </table>
+        </div>
+        <div id="monto">
+          <h4 class="no-margin">Monto $ <input type="text" name="monto" maxlength="4"></h4>
+        </div>
+        <div id="ubicacion">
+          <h4 class="no-margin">Ubicación</h4>
+          <table id="elementos">
+            <tr>
+              <td><img src="img/ubicacion/bot_right.png" alt="bot_right" width="30px"></td>
+              <td><img src="img/ubicacion/top_left.png" alt="top_left" width="30px"></td>
+              <td><img src="img/ubicacion/top_right.png" alt="top_right" width="30px"></td>
+            </tr>
+            <tr>
+              <td><input type="radio" name="location" value="bot_right"  onclick="cambiarPosicion()";></td>
+              <td><input type="radio" name="location" value="top_left"  onclick="cambiarPosicion();"></td>
+              <td><input type="radio" name="location" value="top_right"  onclick="cambiarPosicion();"></td>
+            </tr>
+          </table>
+
+        </div>
+        <div id="fondo">
+          <h4 class="no-margin">Fondo</h4>
+          <table id="elementos">
+            <tr>
+              <td><img class="fondo" src="img/fondos/1.jpg" alt="fondo_1" width="30px"></td>
+              <td><img class="fondo" src="img/fondos/2.jpg" alt="fondo_2" width="30px"></td>
+              <td><img class="fondo" src="img/fondos/3.jpg" alt="fondo_3" width="30px"></td>
+              <td><img class="fondo" src="img/fondos/4.jpg" alt="fondo_4" width="30px"></td>
+              <td><img class="fondo" src="img/fondos/5.jpg" alt="fondo_5" width="30px"></td>
+            </tr>
+            <tr>
+              <td><input type="radio" name="background" value="1"  onclick="cambiarFondo();"></td>
+              <td><input type="radio" name="background" value="2"  onclick="cambiarFondo();"></td>
+              <td><input type="radio" name="background" value="3"  onclick="cambiarFondo();"></td>
+              <td><input type="radio" name="background" value="4"  onclick="cambiarFondo();"></td>
+              <td><input type="radio" name="background" value="5"  onclick="cambiarFondo();"></td>
+            </tr>
+          </table>
+        </div>
+
+        <button class="boton__confirmar" type="button" name="button">Confirmar</button>
+
+      </div>
+
+    </div>
+  </main>
+
+<footer class="footer">
+
+  <a class="logo margin" href="index.html">
+    <img class="logo__imagen" src="img/logo.png" alt="imagen logo">
+  </a>
+
+  <p>Copyright © Cursiva 2021 - Todos los derechos reservados</p>
+
+    <div class="redes-sociales margin">
+      <a class="facebook" href="#">
+        <img src="img/redes/facebook.png" alt="">
+      </a>
+
+      <a class="instagram" href="#">
+        <img src="img/redes/instagram.png" alt="">
+      </a>
+
+      <a class="instagram" href="#">
+        <img src="img/redes/twitter.png" alt="twitter">
+      </a>
+    </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/b7aa95e782.js" crossorigin="anonymous"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src= "js/carrito.js"></script>
+<script src="js/giftcard.js"></script>
+
+
+</body>
+</html>

@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
-  <script src="https://kit.fontawesome.com/b7aa95e782.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -48,6 +47,9 @@
         <path d="M17 17h-11v-14h-2" />
         <path d="M6 5l14 1l-1 7h-13" />
       </svg>
+
+      <p id="cant_carrito" class="contador__carrito"></p>
+
     </div>
 
     <button class="boton__inicio" type="button" name="button">iniciar sesión</button>
@@ -59,8 +61,9 @@
   <!--MENU DE NAVEGACIÓN-->
   <nav class="navegacion-superior">
     <a class="navegacion__item" href="index.html">inicio</a>
-    <a class="navegacion__item" href="formulario.html">cursos</a>
+    <a class="navegacion__item" href="contacto.html">contacto</a>
     <a class="navegacion__item" href="giftcard.html">giftcard</a>
+    <a class="navegacion__item" href="calendario.html">calendario</a>
   </nav>
 
   <main class="contenedor">
@@ -69,106 +72,98 @@
     <h3>inscripción</h3>
 
 
-    <form class="formulario-inscripcion" method="post">
-        <!--DATOS PERSONA-->
-        <div class="formulario-campos">
-          <div class="campo">
-            <label for="">Nombre</label>
-            <input class="input-text" type="text" required />
-          </div>
+    <article class="formulario-inscripcion" method="post">
+      <!--DATOS PERSONA-->
+      <div class="formulario-campos">
 
-          <div class="campo">
-            <label for="">Apellido</label>
-            <input class="input-text" type="text" required />
-          </div>
+        <label for="">Nombre</label>
+        <input class="datos nombre" type="text" />
 
-          <div class="campo">
-            <label for="">E-mail  &nbsp&nbsp</label>
-            <input class="input-email" type="email">
-          </div>
+        <label for="">Apellido</label>
+        <input class="datos apellido" type="text" />
 
-          <button class="boton-resta" type="button" name="button"><i class="fas fa-minus-circle fa-2x"></i></button>
-        </div>
+        <label for="">E-mail</label>
+        <input class="datos email" type="text">
 
+        <button class="boton-resta"><i class="fas fa-minus-circle fa-2x"></i></button>
 
-        <div class="formulario-campos">
-          <div class="campo">
-            <label for="">Nombre</label>
-            <input class="input-text" type="text" required />
-          </div>
+        <button class="boton-sumar"><i class="fas fa-plus-circle fa-2x"></i></button>
 
-          <div class="campo">
-            <label for="">Apellido</label>
-            <input class="input-text" type="text" required />
-          </div>
-
-          <div class="campo">
-            <label for="">E-mail &nbsp&nbsp</label>
-            <input class="input-email" type="email">
-          </div>
-
-          <button class="boton-resta" type="button" name="button"><i class="fas fa-minus-circle fa-2x"></i></button>
-        </div>
-
-        <div class="formulario-campos">
-          <div class="campo">
-            <label for="">Nombre</label>
-            <input class="input-text" type="text" required />
-          </div>
-
-          <div class="campo">
-            <label for="">Apellido</label>
-            <input class="input-text" type="text" required />
-          </div>
-
-          <div class="campo">
-            <label for="">E-mail &nbsp&nbsp</label>
-            <input class="input-email" type="email">
-          </div>
-
-          <button class="boton-resta" type="button" name="button"><i class="fas fa-minus-circle fa-2x"></i></button>
-        </div>
-
-      <button class="boton-sumar" type="button" name="button"> <i class="fas fa-plus-circle fa-2x"></i>
-        <p>&nbsp Agregar persona</p>
-      </button>
-
-      <div class="inscripcion">
-      <p class="precio">US$000.-</p>
-      <button class="boton_inscripcion"type="button" name="button">inscribirse</button>
       </div>
 
-    </form>
+      <div class="formulario-campos">
+
+        <label for="">Nombre</label>
+        <input class="datos nombre" type="text" />
+
+        <label for="">Apellido</label>
+        <input class="datos apellido" type="text" />
+
+        <label for="">E-mail</label>
+        <input class="datos email" type="text">
+
+        <button class="boton-resta"><i class="fas fa-minus-circle fa-2x"></i></button>
+
+        <button class="boton-sumar"><i class="fas fa-plus-circle fa-2x"></i></button>
+
+      </div>
+
+      <div class="formulario-campos">
+
+        <label for="">Nombre</label>
+        <input class="datos nombre" type="text" />
+
+        <label for="">Apellido</label>
+        <input class="datos apellido" type="text" />
+
+        <label for="">E-mail</label>
+        <input class="datos email" type="text">
+
+        <button class="boton-resta"><i class="fas fa-minus-circle fa-2x"></i></button>
+
+        <button class="boton-sumar"><i class="fas fa-plus-circle fa-2x"></i></button>
+
+      </div>
+    </article>
+
+    <div id="error" class="errores"> </div>
+
+
+    <div class="inscripcion">
+      <p class="precio">US$000.-</p>
+      <input class="boton" type="submit" name="" value="incribirse">
+    </div>
+
+
   </main>
 
   <footer class="footer">
-      <ol class="grupo">
-        <li> Datos del grupo:</li>
-        <li> Santiago Saltor, 38.675.463</li>
-        <li> Ivan Maldonado, 43.051.147</li>
-        <li> Brenda Erika Fiorella Herrera, 43.724.139 </li>
-      </ol>
+    <a class="logo margin" href="index.html">
+      <img class="logo__imagen" src="img/logo.png" alt="imagen logo">
+    </a>
 
-      <nav class="navegacion-inferior">
-        <a class="navegacion__item" href="index.html">inicio</a>
-        <a class="navegacion__item" href="cursos.html">cursos</a>
-        <a class="navegacion__item" href="giftcard.html">giftcard</a>
-      </nav>
+    <p>Copyright © Cursiva 2021 - Todos los derechos reservados</p>
 
-      <div class="redes-sociales">
-        <a class="facebook" href="#">
-          <img src="img/facebook.png" alt="">
-        </a>
+    <div class="redes-sociales margin">
+      <a class="facebook" href="#">
+        <img src="img/redes/facebook.png" alt="">
+      </a>
 
-        <a class="instagram" href="#">
-          <img src="img/instagram.png" alt="">
-        </a>
+      <a class="instagram" href="#">
+        <img src="img/redes/instagram.png" alt="">
+      </a>
 
-        <a class="instagram" href="#">
-          <img src="img/twitter.png" alt="twitter">
-        </a>
-      </div>
+      <a class="instagram" href="#">
+        <img src="img/redes/twitter.png" alt="twitter">
+      </a>
+    </div>
   </footer>
+
+  <script src="https://kit.fontawesome.com/b7aa95e782.js" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/carrito.js"> </script>
+  <script src="js/validacionInscripcion.js"></script>
+
 
 </body>
 

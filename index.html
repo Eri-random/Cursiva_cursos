@@ -8,8 +8,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
-  <script src="https://kit.fontawesome.com/b7aa95e782.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -48,6 +49,9 @@
         <path d="M17 17h-11v-14h-2" />
         <path d="M6 5l14 1l-1 7h-13" />
       </svg>
+
+      <p id="cant_carrito" class="contador__carrito"></p>
+
     </div>
 
     <button class="boton__inicio" type="button" name="button">iniciar sesión</button>
@@ -59,16 +63,18 @@
   <!--MENU DE NAVEGACIÓN-->
   <nav class="navegacion-superior">
     <a class="navegacion__item" href="index.html">inicio</a>
-    <a class="navegacion__item" href="formulario.html">cursos</a>
+    <a class="navegacion__item" href="contacto.html">contacto</a>
     <a class="navegacion__item" href="giftcard.html">giftcard</a>
+    <a class="navegacion__item" href="calendario.html">calendario</a>
   </nav>
+
 
   <!--CARROUSEL-->
   <section class="slider">
     <div class="slider__div">
-      <i class="fas fa-chevron-left fa-3x"></i>
-      <img class="slider__imagen" src="img/slider.jpg" alt="">
-      <i class="fas fa-chevron-right fa-3x"></i>
+      <img class="slider__imagen" src="img/slider1.jpg" alt="">
+      <img class="slider__imagen" src="img/slider2.jpg" alt="">
+      <img class="slider__imagen" src="img/slider3.jpg" alt="">
     </div>
   </section>
 
@@ -77,36 +83,39 @@
     <h1>Pasos de inscripción</h1>
     <section class="pasos-inscripcion">
       <div class="pasos-inscripcion__item">
-        <pre><span>1</span> Elige un curso</pre>
+        <img class="pasos-inscripcion__img" src="img/nota.jpg" alt="">
+      <!--  <pre><span>1</span> Elige un curso</pre>-->
       </div>
 
       <div class="pasos-inscripcion__item">
-        <pre><span>2</span> Completá el formulario
-           de inscripción</pre>
+            <img class="pasos-inscripcion__img" src="img/nota2.jpg" alt="">
+      <!--  <pre><span>2</span> Completá el formulario
+           de inscripción</pre>-->
       </div>
 
       <div class="pasos-inscripcion__item">
-        <pre><span>3</span> Obtené tu curso y comenzá
-           a aprender de inmediato</pre>
+        <img class="pasos-inscripcion__img" src="img/nota3.jpg" alt="">
+        <!--  <pre><span>3</span> Obtené tu curso y comenzá
+           a aprender de inmediato</pre> -->
       </div>
-  </section>
+    </section>
 
     <h1>Cursos destacados</h1>
     <div class="grid">
       <!--CURSO CONTENEDOR-->
       <div class="curso">
         <!--CURSO IMAGEN-->
-          <a class="curso__imagen" href="curso.html">
-            <img class src="img/c.png" alt="imagen c#">
-            <p class="curso__precio">12,99 US$</p>
-          </a>
+        <a class="curso__imagen" href="curso.html">
+          <img class src="img/cursos/c.png" alt="imagen c#">
+          <p class="curso__precio">12,99 US$</p>
+        </a>
         <!--CURSO INFORMACION-->
         <div class="curso__informacion">
           <p class="curso__nombre">Aprende programación orientada a objetos en C# con proyectos</p>
           <p>Duración: 22hs</p>
           <a class="curso__detalles" href="curso.html">ver detalles</a>
           <!--BOTON PARA COMPRAR-->
-          <a class="boton__compra" href="#">Comprar</a>
+          <a class="boton__compra">Comprar</a>
         </div>
       </div>
       <!--CIERRE DE CURSO-->
@@ -115,7 +124,7 @@
       <div class="curso sombra">
         <!--CURSO IMAGEN-->
         <a class="curso__imagen" href="curso.html">
-          <img class src="img/java.jpg" alt="imagen c#">
+          <img class src="img/cursos/java.jpg" alt="imagen c#">
           <p class="curso__precio">12,99 US$</p>
         </a>
         <!--CURSO INFORMACION-->
@@ -124,7 +133,7 @@
           <p>Duración:+100 hs</p>
           <a class="curso__detalles" href="curso.html">ver detalles</a>
           <!--BOTON PARA COMPRAR-->
-          <a class="boton__compra" href="#">Comprar</a>
+          <a class="boton__compra">Comprar</a>
         </div>
       </div>
       <!--CIERRE DE CURSO-->
@@ -133,7 +142,7 @@
       <div class="curso sombra">
         <!--CURSO IMAGEN-->
         <a class="curso__imagen" href="curso.html">
-          <img class src="img/javaScript.jpg" alt="imagen c#">
+          <img class src="img/cursos/javaScript.jpg" alt="imagen c#">
           <p class="curso__precio">12,99 US$</p>
         </a>
         <!--CURSO INFORMACION-->
@@ -142,7 +151,7 @@
           <p>Duración: 18hrs</p>
           <a class="curso__detalles" href="curso.html">ver detalles</a>
           <!--BOTON PARA COMPRAR-->
-          <a class="boton__compra" href="#">Comprar</a>
+          <a class="boton__compra">Comprar</a>
         </div>
       </div>
       <!--CIERRE DE CURSO-->
@@ -151,7 +160,7 @@
       <div class="curso sombra">
         <!--CURSO IMAGEN-->
         <a class="curso__imagen" href="curso.html">
-          <img class src="img/Kotlin.png" alt="imagen Kotlin">
+          <img class src="img/cursos/Kotlin.png" alt="imagen Kotlin">
           <p class="curso__precio">12,99 US$</p>
         </a>
         <!--CURSO INFORMACION-->
@@ -160,7 +169,7 @@
           <p>Duración: 18hrs</p>
           <a class="curso__detalles" href="curso.html">ver detalles</a>
           <!--BOTON PARA COMPRAR-->
-          <a class="boton__compra" href="#">Comprar</a>
+          <a class="boton__compra">Comprar</a>
         </div>
       </div>
       <!--CIERRE DE CURSO-->
@@ -169,7 +178,7 @@
       <div class="curso sombra">
         <!--CURSO IMAGEN-->
         <a class="curso__imagen" href="curso.html">
-          <img class src="img/phyton.png" alt="imagen Kotlin">
+          <img class src="img/cursos/phyton.png" alt="imagen Kotlin">
           <p class="curso__precio">12,99 US$</p>
         </a>
         <!--CURSO INFORMACION-->
@@ -178,7 +187,7 @@
           <p>Duración: 13hrs</p>
           <a class="curso__detalles" href="curso.html">ver detalles</a>
           <!--BOTON PARA COMPRAR-->
-          <a class="boton__compra" href="#">Comprar</a>
+          <a class="boton__compra">Comprar</a>
         </div>
       </div>
       <!--CIERRE DE CURSO-->
@@ -187,7 +196,7 @@
       <div class="curso sombra">
         <!--CURSO IMAGEN-->
         <a class="curso__imagen" href="curso.html">
-          <img class src="img/web.jpg" alt="imagen Kotlin">
+          <img class src="img/cursos/web.jpg" alt="imagen Kotlin">
           <p class="curso__precio">12,99 US$</p>
         </a>
         <!--CURSO INFORMACION-->
@@ -196,83 +205,82 @@
           <p>Duración: 90hrs</p>
           <a class="curso__detalles" href="curso.html">ver detalles</a>
           <!--BOTON PARA COMPRAR-->
-          <a class="boton__compra" href="#">Comprar</a>
+          <a class="boton__compra">Comprar</a>
         </div>
       </div>
       <!--CIERRE DE CURSOS-->
     </div>
     <!--CIERRE DE GRID-->
 
+    <h1>medios de pago</h1>
+
     <section class="medios_de_pago">
-      <h1>medios de pago</h1>
 
-      <div class="medios_de_pago__informacion">
-        <button class="flecha" type="button" name="button">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#393e46" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <polyline points="15 6 9 12 15 18" />
-          </svg>
-        </button>
+    <!-- <button class="flecha"><i class="fas fa-chevron-left fa-2x"></i></button> -->
+
+      <div class="pagos">
 
         <div class="medios_de_pago__imagen">
-          <img src="img/pagos/mercadopago.png" alt="">
+          <img class="center-img" src="img/pagos/mercadopago.png" alt="">
         </div>
 
         <div class="medios_de_pago__imagen">
-          <img src="img/pagos/pagofacil.png" alt="">
+          <img class="center-img" src="img/pagos/pagofacil.png" alt="">
         </div>
 
         <div class="medios_de_pago__imagen">
-          <img src="img/pagos/visa.png" alt="">
+          <img class="center-img" src="img/pagos/visa.png" alt="">
         </div>
 
         <div class="medios_de_pago__imagen">
-          <img src="img/pagos/mastercard.png" alt="">
+          <img class="center-img" src="img/pagos/mastercard.png" alt="">
         </div>
 
+        <div class="medios_de_pago__imagen">
+          <img class="center-img" src="img/pagos/naranja.png" alt="">
+        </div>
 
+        <div class="medios_de_pago__imagen">
+          <img class="center-img" src="img/pagos/express.png" alt="">
+        </div>
 
-
-        <button class="flecha" type="button" name="button">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#393e46" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <polyline points="9 6 15 12 9 18" />
-          </svg>
-        </button>
       </div>
+
+     <!--<button class="flecha" type="button" name="button"><i class="fas fa-chevron-right fa-2x"></i></button>-->
 
     </section>
   </main>
 
-
   <footer class="footer">
-      <ol class="grupo">
-      <li> Datos del grupo:</li>
-      <li> Santiago Saltor, 38.675.463</li>
-      <li> Ivan Maldonado, 43.051.147</li>
-      <li> Brenda Erika Fiorella Herrera, 43.724.139 </li>
-    </ol>
+    <a class="logo margin" href="index.html">
+      <img class="logo__imagen" src="img/logo.png" alt="imagen logo">
+    </a>
 
-    <nav class="navegacion-inferior">
-      <a class="navegacion__item" href="index.html">inicio</a>
-      <a class="navegacion__item" href="cursos.html">cursos</a>
-      <a class="navegacion__item" href="giftcard.html">giftcard</a>
-    </nav>
+    <p>Copyright © Cursiva 2021 - Todos los derechos reservados</p>
 
-    <div class="redes-sociales">
+
+    <div class="redes-sociales margin">
       <a class="facebook" href="#">
-        <img src="img/facebook.png" alt="facebook">
+        <img src="img/redes/facebook.png" alt="facebook">
       </a>
 
       <a class="instagram" href="#">
-        <img src="img/instagram.png" alt="instagram">
+        <img src="img/redes/instagram.png" alt="instagram">
       </a>
 
       <a class="instagram" href="#">
-        <img src="img/twitter.png" alt="twitter">
+        <img src="img/redes/twitter.png" alt="twitter">
       </a>
     </div>
   </footer>
+
+  <script src="https://kit.fontawesome.com/b7aa95e782.js" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="js/carrito.js"> </script>
+  <script src="js/carrousel.js"></script>
+
+
 
 </body>
 
